@@ -1,6 +1,6 @@
 {
   "name": "better-auth-oneid",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.1",
   "description": "Uzbekistan OneID provider helper for Better Auth",
   "main": "./dist/index.js",
   "scripts": {
@@ -50,5 +50,9 @@
   },
   "peerDependencies": {
     "better-auth": "~1.7.12"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
   }
 }

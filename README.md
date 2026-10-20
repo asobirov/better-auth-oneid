@@ -16,7 +16,15 @@ before deployment. This package is not affiliated with OneID or Better Auth.
 - Your own OneID agreement, client ID, client secret, assigned information-system
   scope code, HTTPS endpoint, and registered callback URL.
 
-The intended unscoped npm name is `better-auth-oneid`. It has **not been published**.
+## Install the experimental prerelease
+
+```sh
+npm install better-auth-oneid@next better-auth@~1.7.12
+```
+
+Prereleases use the `next` dist-tag and are not production verified. The stable
+release remains gated on live OneID sandbox validation.
+
 For local development, run `npm ci && npm pack` in this repository and install the
 resulting `.tgz` into your application alongside the supported Better Auth version.
 
