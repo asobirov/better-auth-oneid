@@ -1,0 +1,54 @@
+{
+  "name": "better-auth-oneid",
+  "version": "0.1.0",
+  "description": "Uzbekistan OneID provider helper for Better Auth",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "better-auth",
+    "oneid",
+    "uzbekistan",
+    "oauth",
+    "authentication"
+  ],
+  "author": "asobirov",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "better-auth": "^1.7.12",
+    "typescript": "^6.0.3"
+  },
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asobirov/better-auth-oneid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/asobirov/better-auth-oneid/issues"
+  },
+  "homepage": "https://github.com/asobirov/better-auth-oneid#readme",
+  "engines": {
+    "node": ">=22"
+  },
+  "peerDependencies": {
+    "better-auth": "~1.7.12"
+  }
+}
